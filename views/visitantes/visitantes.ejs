@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src='lib/jquery.min.js'></script>
+  <script src='lib/moment.min.js'></script>
+  <script src="/javascripts/visitantes.js"></script>
+
+</head>
+  <% include ../layout/head %>
+
+  <body id="page-top">
+
+
+    <% include ../layout/topo %>
+
+
+      <div id="wrapper">
+
+        <% include ../layout/menuesquerdo %>
+
+
+        <div id="content-wrapper">
+
+                <div class="container-fluid">
+                  <div class="col-lg">
+
+                  <h1>Visitantes</h1>
+
+
+                  <form  id="form_novo" onsubmit="return confirm('Os dados estão corretos?');" action="/nomesincluir" method="post" class="form-horizontal form-label-left">
+
+                      <div class="box-body no-padding">
+                                  <table id="table" class="table">
+                                      <thead>
+                                          <tr>
+                                            <th>Nome</th>
+
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+
+                                      </tbody>
+                                  </table>
+                        </div>
+
+                        <img id="btn_more" src="images/more.svg"/>
+
+
+
+
+                  </form>
+                  <br>
+                  <img id="btn_delete_all" src="images/trash_all.png"/>
+
+                </div>
+
+                </div>
+
+
+          </div>
+          <!-- /.container-fluid -->
+
+        <% include ../layout/footer %>
+
+        </div>
+        <!-- /.content-wrapper -->
+
+      </div>
+
+      <% include ../layout/rodape %>
+
+
+  </body>
+
+</html>

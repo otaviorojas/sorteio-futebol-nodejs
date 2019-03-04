@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src='lib/jquery.min.js'></script>
+  <script src='lib/moment.min.js'></script>
+  <script src="/javascripts/sorteio.js"></script>
+
+</head>
+  <% include ../layout/head %>
+
+  <body id="page-top">
+
+
+    <% include ../layout/topo %>
+
+
+      <div id="wrapper">
+
+        <% include ../layout/menuesquerdo %>
+
+
+        <div id="content-wrapper">
+
+                <div class="container-fluid">
+
+                  <div class="row">
+                    <div class="col-lg-10">
+                      <button id="btn-sorteio" class="btn btn-primary" type="button" > SORTEAR TIMES </button>
+
+                      <!--
+                      <div id="nao_clique" style="display: none;" class="box-body no-padding">
+                        <img id="image1" src="images/ezeq_1.jpeg" />
+                      </div>
+
+
+                      <button id="btn-nao" class="btn btn-primary" type="button" > NAO CLIQUE</button>-->
+
+                    </div>
+
+                    </div>
+                    <br>
+
+
+                  <div class="row">
+
+                      <div class="col-lg-3">
+                        <table id="table_time_A" class="table">
+                            <thead>
+                                <tr>
+                                  <td><h2 id="time_a"></h2></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                      </div>
+                      <div class="col-lg-3">
+                        <table id="table_time_B" class="table">
+                            <thead>
+                                <tr>
+
+                                  <td ><h2 id="time_b"></h2></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                      </div>
+                      <div class="col-lg-3">
+                        <table id="table_proximo" class="table">
+                            <thead>
+                                <tr>
+
+                                  <td id="proximo"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                      </div>
+
+
+
+
+
+                </div>
+
+
+          </div>
+          <!-- /.container-fluid -->
+
+        <% include ../layout/footer %>
+
+        </div>
+        <!-- /.content-wrapper -->
+
+      </div>
+
+      <% include ../layout/rodape %>
+
+
+  </body>
+
+</html>

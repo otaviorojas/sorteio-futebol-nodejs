@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <script src='lib/jquery.min.js'></script>
+  <script src='lib/moment.min.js'></script>
+  <script src="/javascripts/mural.js"></script>
+
+</head>
+  <% include ../layout/head %>
+
+  <body id="page-top">
+
+
+    <% include ../layout/topo %>
+
+
+      <div id="wrapper">
+
+        <% include ../layout/menuesquerdo %>
+
+
+        <div id="content-wrapper">
+
+                <div class="container-fluid">
+                  <div class="col-lg-8">
+
+                  <h1>Inicio</h1>
+
+
+                    <div class="form-group has-success">
+                      <label for="inputPassword" class="col-sm-20 col-form-label"><small>Valor total mensal</small></label>
+                        <input type="number" class="form-control" id="v_mensal">
+                    </div>
+
+                    <div class="form-group has-warning">
+                      <label for="inputPassword" class="col-sm-20 col-form-label"><small>Total mensalistas</small></label>
+                        <input type="number" class="form-control" id="t_mensalistas">
+                    </div>
+
+                    <div class="form-group has-error">
+                      <label for="inputPassword" class="col-sm-20 col-form-label"><small>Valor por pessoa</small></label>
+                        <input type="number" class="form-control" id="v_pessoa">
+                    </div>
+
+                    <div class="form-group has-error" align="center">
+                    <label for="inputPassword"><button id="btn-calc" type="button" class="btn btn-primary" >Calcular</button></label>
+                    </div>
+
+
+                    <div class="form-group has-error">
+                      <label for="inputPassword" class="col-sm-20 col-form-label"><small>Valor avulso (visitante)</small></label>
+                        <input type="number" class="form-control" id="v_avulso" disabled="disabled">
+                    </div>
+
+                    <div class="form-group has-error">
+                      <h2>Localização</h2>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58512.56040922878!2d-46.8316034!3d-23.5671855!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60806a6be1dd312f!2sClub+Aldeia+de+Carapicu%C3%ADba!5e0!3m2!1spt-BR!2sbr!4v1535937844623" width="100%" height="50%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+
+
+
+
+                </div>
+
+                </div>
+
+
+          </div>
+          <!-- /.container-fluid -->
+
+        <% include ../layout/footer %>
+
+        </div>
+        <!-- /.content-wrapper -->
+
+      </div>
+
+      <% include ../layout/rodape %>
+
+
+  </body>
+
+</html>

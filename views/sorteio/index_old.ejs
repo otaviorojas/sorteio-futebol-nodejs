@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- CSS do Bootstrap (obrigatório) -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+      <!--[if lt IE 9]>
+      <script src = "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src = "https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+
+
+
+    <% include ../layout/head %>
+    <script src="/javascripts/sorteio.js"></script>
+    <link rel="stylesheet" href="/css/dashboard/mesh.min.css">
+    <link rel="stylesheet" href="/css/dashboard/dashboard.css">
+    <link rel="stylesheet" href="/css/custom.css">
+
+</head>
+<body class="nav-sm">
+  <div class="container body">
+        <div class="main_container">
+        <% include ../layout/menuesquerdo %>
+        <% include ../layout/topo %>
+
+           <div class="right_col" role="main" style="min-height: 1410px;">
+
+
+<!----------------------------------------------------------------------------------------------->
+               <div>
+                 <h3>Sorteio </h3>
+               </div><br>
+
+
+         <section class="content">
+             <div class="x_panel">
+
+               <div class="box-body" ng-show="toggle_search">
+
+
+
+                        <div class="row">
+
+
+
+                                  <button id="btn-sorteio" class="btn btn-black" type="button" > SORTEAR TIMES </button>
+
+                                  <div id="nao_clique" style="display: none;" class="box-body no-padding">
+                                    <img id="image1" src="images/ezeq_1.jpeg" />
+                                  </div>
+
+
+                                  <button id="btn-nao" class="btn btn-primary" type="button" > NAO CLIQUE</button>
+                                  <div class="box-body no-padding">
+                                    <div class="col-md-4">
+                                              <table id="table_time_A" class="table table-striped">
+                                                  <thead>
+                                                      <tr>
+                                                        <td><h2 id="time_a"></h2></td>
+                                                      </tr>
+                                                  </thead>
+                                                  <tbody>
+
+                                                  </tbody>
+                                              </table>
+                                            </div>
+                                            <div class="col-md-4">
+                                              <table id="table_time_B" class="table table-striped">
+                                                  <thead>
+                                                      <tr>
+
+                                                        <td ><h2 id="time_b"></h2></td>
+                                                      </tr>
+                                                  </thead>
+                                                  <tbody>
+
+                                                  </tbody>
+                                              </table>
+                                            </div>
+                                            <div class="col-md-4">
+                                              <table id="table_proximo" class="table table-striped">
+                                                  <thead>
+                                                      <tr>
+
+                                                        <th id="proximo"></th>
+                                                      </tr>
+                                                  </thead>
+                                                  <tbody>
+
+                                                  </tbody>
+                                              </table>
+                                            </div>
+                                  </div>
+
+
+                          </div>
+
+
+                </div><br>
+
+
+            </div>
+        </section><br>
+
+
+
+                   <!--<footer>
+                   <% include ../layout/footer %>
+                   <footer>-->
+
+<!----------------------------------------------------------------------------------------------->
+
+
+                  <% include ../layout/footer %>
+
+
+          </div>
+
+        </div>
+  </div>
+</body>
+
+</html>

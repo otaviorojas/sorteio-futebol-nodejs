@@ -1,0 +1,28 @@
+{
+  "name": "sorteio_futebol",
+  "version": "1.0.0",
+  "description": "App para sortear times",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Otavio Rojas",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "*",
+    "cookie-session": "*",
+    "ejs": "*",
+    "express": "*",
+    "express-load": "*",
+    "helmet": "*",
+    "moment": "*",
+    "mysql": "*",
+    "newrelic": "*",
+    "nodemon": "^1.18.4",
+    "quagga": "*",
+    "request": "*",
+    "xml2js": "*"
+  }
+}

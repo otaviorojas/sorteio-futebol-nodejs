@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- CSS do Bootstrap (obrigatório) -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+      <!--[if lt IE 9]>
+      <script src = "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src = "https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+
+
+
+    <% include ../layout/head %>
+    <script src="/javascripts/reset.js"></script>
+    <link rel="stylesheet" href="/css/dashboard/mesh.min.css">
+    <link rel="stylesheet" href="/css/dashboard/dashboard.css">
+    <link rel="stylesheet" href="/css/custom.css">
+
+</head>
+<body class="nav-sm">
+  <div class="container body">
+        <div class="main_container">
+        <% include ../layout/menuesquerdo %>
+        <% include ../layout/topo %>
+
+           <div class="right_col" role="main" style="min-height: 1410px;">
+
+
+<!----------------------------------------------------------------------------------------------->
+               <div>
+                 <h3>Reset </h3>
+               </div><br>
+
+
+         <section class="content">
+             <div class="x_panel">
+
+               <div class="box-body" ng-show="toggle_search">
+
+
+
+                        <div class="row">
+
+                                  <div class="box-body no-padding">
+                                    <h1><strong>Atenção:</strong></br>
+                                      <h2>Ao clicar no botao abaixo, todos os jogadores cadastrados serão marcados como "Presentes".
+                                      Os jogadores presentes, ficam disponiveis na lista de sorteio. Esta opcao deve ser marcada, ao iniciar o jogo, feito disso
+                                      acesse a tela "Cadastrar" e remova de acordo com a presença em quadra.</h2>
+
+                                  </div>
+                                  <button id="btn-reset" class="btn btn-danger" type="button" > Resetar</button>
+
+
+                          </div>
+
+
+                </div><br>
+
+
+            </div>
+        </section><br>
+
+
+
+                   <!--<footer>
+                   <% include ../layout/footer %>
+                   <footer>-->
+
+<!----------------------------------------------------------------------------------------------->
+
+
+                  <% include ../layout/footer %>
+
+
+          </div>
+
+        </div>
+  </div>
+</body>
+
+</html>

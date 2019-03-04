@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+  <% include ../layout/head %>
+
+  <body class="bg-dark" >
+
+
+
+
+      <div id="wrapper">
+
+
+
+        <div id="content-wrapper">
+
+          <div class="container-fluid">
+
+
+
+                <section class="widget login-widget">
+                    <header class="text-align-center">
+                      <% if (typeof status_detail != 'undefined'){ %>
+                          <% if (status_detail == 'user_or_password_invalid'){ %>
+                              <div id="teste" class="alert alert-danger msg-status-login"><strong>Ops!</strong> Usuário ou Senha inválido!</div>
+                          <% }else if(status_detail == 'logout'){ %>
+                              <div class="alert alert-success msg-status-login">Logout efetuado com sucesso!</div>
+                          <% } %>
+                      <% } %>
+                  </header>
+
+                  <div class="card card-login mx-auto mt-5">
+                          <div class="card-header">Login</div>
+                          <div class="card-body">
+                            <form class="no-margin" role="form" action="/login" method="post">
+                              <fieldset>
+                                  <div class="form-group">
+                                      <label for="email">Usuario</label>
+                                      <div class="input-group">
+                                          <span class="input-group-addon">
+                                              <i class="fa fa-user"></i>
+                                          </span>
+
+                                              <input name="user" class="form-control input-lg input-transparent" placeholder="Entre com o seu usuário de rede">
+
+                                      </div>
+
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="password">Senha</label>
+
+                                      <div class="input-group input-group-lg">
+                                          <span class="input-group-addon">
+                                              <i class="fa fa-lock"></i>
+                                          </span>
+                                          <input name="password" type="password" class="form-control input-lg input-transparent" placeholder="Senha">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                        <div align="center">
+                                            <button type="submit" class="btn btn-lg btn-success btn-block">
+                                              <h5><span class="small-circle"><i class="fa fa-check"></i> Login</span></h5>
+                                          </button>
+                                      </div>
+                                  </div>
+                             </fieldset>
+                            </form>
+                          </div>
+                        </div>
+
+
+                    </section>
+
+
+
+
+
+
+          </div>
+          <!-- /.container-fluid -->
+
+
+        </div>
+        <!-- /.content-wrapper -->
+
+      </div>
+
+      <% include ../layout/rodape %>
+
+
+  </body>
+
+</html>
